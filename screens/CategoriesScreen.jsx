@@ -4,10 +4,9 @@ import { CATEGORIES } from "../data/dummy-data";
 import CategoryGridTitle from "../components/CategoryGridTitle";
 
 const CategoriesScreen = ({ navigation }) => {
-
   const renderCategoryItem = ({ item }) => {
     const onPressHandler = () => {
-      navigation.navigate("Meals Overview", {
+      navigation.navigate("MealsOverview", {
         categoryId: item.id,
       });
     };
