@@ -19,13 +19,13 @@ const FavoritesContextProvider = ({ children }) => {
   };
 
   const value = {
-    id: favoriteMealIds,
+    ids: favoriteMealIds,
     addFavorite,
     removeFavorite,
   };
 
   return (
-    <FavoritesContext.Provider values={value}>
+    <FavoritesContext.Provider value={value}>
       {children}
     </FavoritesContext.Provider>
   );
